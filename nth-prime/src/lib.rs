@@ -1,3 +1,41 @@
+pub fn nth(n: u32) -> u32 {
+    if n == 0 {
+        return 2;
+    }
+
+    const LIMIT: u32 = 200_000;
+    let mut primes = [true; LIMIT as usize];
+
+    primes[0] = false;
+    primes[1] = false;
+
+    for p in 1..LIMIT {
+        if is_prime(p) {
+            let mut i = 2;
+
+            while p * i < LIMIT {
+                primes[(p * i) as usize] = false;
+                i = i + 1;
+            }
+        } else {
+            primes[p as usize] = false;
+        }
+    }
+
+    let mut i = 0;
+    for (num, val) in primes.iter().enumerate() {
+        if *val == true {
+            i = i + 1;
+
+            if i > n {
+                return num as u32;
+            }
+        }
+    }
+
+    0
+}
+
 fn is_prime(n: u32) -> bool {
     match n {
         0 => false,
@@ -19,37 +57,4 @@ fn is_prime(n: u32) -> bool {
             true
         }
     }
-}
-
-pub fn nth(n: u32) -> Option<u32> {
-    const LIMIT: u32 = 200_000;
-    let mut primes = [true; LIMIT as usize];
-
-    primes[0] = false;
-
-    for p in 1..LIMIT {
-        if is_prime(p) {
-            let mut i = 2;
-
-            while p * i < LIMIT {
-                primes[(p * i) as usize] = false;
-                i = i + 1;
-            }
-        } else {
-            primes[p as usize] = false;
-        }
-    }
-
-    let mut i = 0;
-    for (num, val) in primes.iter().enumerate() {
-        if *val == true {
-            i = i + 1;
-
-            if i == n {
-                return Some(num as u32);
-            }
-        }
-    }
-
-    None
 }
