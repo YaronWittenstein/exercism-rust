@@ -1,5 +1,3 @@
-#![allow(unused)]
-
 #[derive(PartialEq, Debug)]
 pub struct Clock {
     hours: i32,
