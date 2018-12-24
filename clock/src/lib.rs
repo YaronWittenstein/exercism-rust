@@ -4,6 +4,8 @@ pub struct Clock {
     minutes: i32,
 }
 
+const DAY_IN_MINS: i32 = 24 * 60;
+
 impl Clock {
     pub fn new(hours: i32, minutes: i32) -> Self {
         let clock = Clock {
@@ -25,18 +27,10 @@ impl Clock {
     pub fn add_minutes(self, minutes: i32) -> Self {
         let mut mins: i32 = self.to_minutes() + minutes;
 
-        const DAY_IN_MINS: i32 = 24 * 60;
-
-        if mins < 0 {
-            mins = mins + DAY_IN_MINS * (mins.abs() / DAY_IN_MINS);
-
-            if mins < 0 {
-                mins += DAY_IN_MINS;
-            }
-        }
+        mins = ((mins % DAY_IN_MINS) + DAY_IN_MINS) % DAY_IN_MINS;
 
         Clock {
-            hours: (mins / 60) % 24,
+            hours: mins / 60,
             minutes: mins % 60,
         }
     }
