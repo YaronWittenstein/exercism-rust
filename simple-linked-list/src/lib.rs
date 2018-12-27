@@ -1,7 +1,3 @@
-#![allow(unused)]
-
-use std::cell::RefCell;
-
 pub struct SimpleLinkedList<T> {
     head: Option<Box<Node<T>>>,
 }
