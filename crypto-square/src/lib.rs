@@ -1,7 +1,3 @@
-#![allow(unused)]
-
-use std::iter;
-
 struct Rectangle {
     r: usize,
     c: usize,
@@ -20,7 +16,7 @@ pub fn encrypt(input: &str) -> String {
     }
 
     let dims = calc_rectangle(chars.len());
-    let pads = iter::repeat(' ').take(dims.pad);
+    let pads = std::iter::repeat(' ').take(dims.pad);
 
     let chars_vec = chars.into_iter().chain(pads).collect::<Vec<_>>();
     let mut strings = Vec::<String>::with_capacity(dims.c);
