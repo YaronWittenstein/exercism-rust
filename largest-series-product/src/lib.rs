@@ -23,7 +23,7 @@ pub fn lsp(string_digits: &str, n: usize) -> Result<u64, Error> {
             }
         })?
         .windows(n)
-        .map(|w: &[u64]| w.iter().product::<u64>())
+        .map(|w| w.iter().product())
         .max()
         .ok_or(Error::SpanTooLong)
 }
