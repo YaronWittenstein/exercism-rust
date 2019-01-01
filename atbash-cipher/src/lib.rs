@@ -3,9 +3,9 @@ use std::collections::HashMap;
 pub fn encode(plain: &str) -> String {
     transform(plain)
         .chars()
-        .collect::<Vec<char>>()
+        .collect::<Vec<_>>()
         .chunks(5)
-        .map(|chunk| chunk.iter().collect::<String>())
+        .map(|chunk| chunk.iter().collect::<_>())
         .collect::<Vec<String>>()
         .join(" ")
 }

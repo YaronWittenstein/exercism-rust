@@ -18,16 +18,12 @@ where
     while start <= end {
         let mid = (start + end) / 2;
 
-        let mid_val: &T = items.get(mid as usize).unwrap();
+        let mid_val = items.get(mid as usize).unwrap();
 
         match mid_val.cmp(&val) {
             Ordering::Equal => return Some(mid as i32),
-            Ordering::Greater => {
-                end = mid - 1;
-            }
-            Ordering::Less => {
-                start = mid + 1;
-            }
+            Ordering::Greater => end = mid - 1,
+            Ordering::Less => start = mid + 1,
         }
     }
 

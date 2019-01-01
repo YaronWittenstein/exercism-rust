@@ -1,7 +1,7 @@
 pub fn sing(start: i32, end: i32) -> String {
-    let mut items: Vec<String> = (end..start + 1).map(|n| verse(n)).collect();
+    let mut items = (end..start + 1).map(verse).collect::<Vec<String>>();
 
-    (&mut items).reverse();
+    items.reverse();
 
     items.join("\n")
 }
@@ -9,14 +9,14 @@ pub fn sing(start: i32, end: i32) -> String {
 pub fn verse(n: i32) -> String {
     format!(
         "{0} of beer on the wall, {1} of beer.\n{2}, {3} of beer on the wall.\n",
-        pluralize_bottles(n, true),
-        pluralize_bottles(n, false),
+        pluralize(n, true),
+        pluralize(n, false),
         next_step(n),
-        pluralize_bottles(n - 1, false),
+        pluralize(n - 1, false),
     )
 }
 
-fn pluralize_bottles(n: i32, capitalize: bool) -> String {
+fn pluralize(n: i32, capitalize: bool) -> String {
     match n {
         -1 => "99 bottles".to_string(),
         0 => format!("{0} more bottles", if capitalize { "No" } else { "no" }),

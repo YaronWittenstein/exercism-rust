@@ -1,17 +1,17 @@
 pub fn brackets_are_balanced(string: &str) -> bool {
     string
         .chars()
-        .filter(|&c| is_bracket(c))
-        .fold(Vec::<char>::new(), |mut brackets, b| match brackets.len() {
+        .filter(is_bracket)
+        .fold(Vec::new(), |mut brackets, b| match brackets.len() {
             0 => {
                 brackets.push(b);
                 brackets
             }
             _ => {
-                let last: char = brackets.pop().unwrap();
+                let top = brackets.pop().unwrap();
 
-                if !is_pair(last, b) {
-                    brackets.push(last);
+                if !is_pair(top, b) {
+                    brackets.push(top);
                     brackets.push(b);
                 }
 
@@ -28,7 +28,7 @@ fn is_pair(b1: char, b2: char) -> bool {
     }
 }
 
-fn is_bracket(b: char) -> bool {
+fn is_bracket(b: &char) -> bool {
     match b {
         '(' | ')' | '[' | ']' | '{' | '}' => true,
         _ => false,

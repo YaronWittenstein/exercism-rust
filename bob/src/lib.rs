@@ -19,7 +19,7 @@ fn is_shout(message: &str) -> bool {
 }
 
 fn has_letters(message: &str) -> bool {
-    message.chars().any(|ch| ch.is_ascii_alphabetic())
+    message.chars().any(|c| c.is_ascii_alphabetic())
 }
 
 fn is_question(message: &str) -> bool {
@@ -27,5 +27,5 @@ fn is_question(message: &str) -> bool {
 }
 
 fn is_silence(message: &str) -> bool {
-    message.chars().all(|ch| ch.is_whitespace())
+    message.chars().all(char::is_whitespace)
 }
