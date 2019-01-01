@@ -23,12 +23,6 @@ fn is_sublist<T: PartialEq>(first_list: &[T], second_list: &[T]) -> bool {
 
     match wsize {
         0 => true,
-        _ => second_list
-            .windows(wsize)
-            .any(|w| slices_equal(w, first_list)),
+        _ => second_list.windows(wsize).any(|w| w == first_list),
     }
-}
-
-fn slices_equal<T: PartialEq>(s: &[T], t: &[T]) -> bool {
-    s.iter().enumerate().all(|(i, si)| *si == t[i])
 }
