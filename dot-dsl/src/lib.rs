@@ -1,5 +1,8 @@
 pub mod graph {
+    use self::graph_items::edge::Edge;
+    use self::graph_items::node::Node;
     use std::collections::HashMap;
+    use std::default::Default;
 
     pub mod graph_items {
         pub mod node {
@@ -15,7 +18,7 @@ pub mod graph {
                 pub fn new(label: &str) -> Self {
                     Self {
                         label: label.to_string(),
-                        attrs: HashMap::new(),
+                        attrs: Default::default(),
                     }
                 }
 
@@ -32,7 +35,7 @@ pub mod graph {
 
                     match v {
                         None => None,
-                        Some(value) => Some(&value[..]),
+                        Some(value) => Some(&value),
                     }
                 }
             }
@@ -53,7 +56,7 @@ pub mod graph {
                     Self {
                         from: from.to_string(),
                         to: to.to_string(),
-                        attrs: HashMap::new(),
+                        attrs: Default::default(),
                     }
                 }
 
@@ -70,37 +73,31 @@ pub mod graph {
 
     #[derive(Debug)]
     pub struct Graph {
-        pub nodes: Vec<graph_items::node::Node>,
-        pub edges: Vec<graph_items::edge::Edge>,
+        pub nodes: Vec<Node>,
+        pub edges: Vec<Edge>,
         pub attrs: HashMap<String, String>,
     }
 
     impl Graph {
         pub fn new() -> Self {
             Self {
-                nodes: Vec::new(),
-                edges: Vec::new(),
-                attrs: HashMap::new(),
+                nodes: Default::default(),
+                edges: Default::default(),
+                attrs: Default::default(),
             }
         }
 
-        pub fn get_node(&self, label: &str) -> Option<&graph_items::node::Node> {
+        pub fn get_node(&self, label: &str) -> Option<&Node> {
             self.nodes.iter().find(|node| node.label == *label)
         }
 
-        pub fn with_nodes(mut self, nodes: &[graph_items::node::Node]) -> Self {
-            for node in nodes {
-                self.nodes.push(node.clone());
-            }
-
+        pub fn with_nodes(mut self, nodes: &[Node]) -> Self {
+            self.nodes = nodes.to_vec();
             self
         }
 
-        pub fn with_edges(mut self, edges: &[graph_items::edge::Edge]) -> Self {
-            for edge in edges {
-                self.edges.push(edge.clone());
-            }
-
+        pub fn with_edges(mut self, edges: &[Edge]) -> Self {
+            self.edges = edges.to_vec();
             self
         }
 
