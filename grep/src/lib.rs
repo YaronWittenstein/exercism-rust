@@ -1,10 +1,7 @@
-#![allow(unused)]
-use failure::{err_msg, Error};
+use failure::Error;
 
 use std::fs::File;
-use std::io::{BufReader, Read};
-
-use std::collections::HashSet;
+use std::io::Read;
 
 /// While using raw slice of str to handle flags is convenient,
 /// in the real-world projects it is customary to use a struct,
