@@ -1,0 +1,48 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a74b847/
+Additional reading	README.md	/^### Additional reading$/;"	S
+Error handling	README.md	/^### Error handling$/;"	S
+Feedback, Issues, Pull Requests	README.md	/^## Feedback, Issues, Pull Requests$/;"	s
+Fixture	tests/grep.rs	/^impl<'a> Drop for Fixture<'a> {$/;"	c
+Fixture	tests/grep.rs	/^impl<'a> Fixture<'a> {$/;"	c
+Fixture	tests/grep.rs	/^struct Fixture<'a> {$/;"	s
+Flags	README.md	/^### Flags$/;"	S
+Flags	src/lib.rs	/^impl Flags {$/;"	c
+Flags	src/lib.rs	/^pub struct Flags;$/;"	s
+Grep	README.md	/^# Grep$/;"	c
+ILIAD_CONTENT	tests/grep.rs	/^static ILIAD_CONTENT: &'static str = "Achilles sing, O Goddess! Peleus' son;$/;"	v
+IN_THE_WHITE_NIGHT_CONTENT	tests/grep.rs	/^static IN_THE_WHITE_NIGHT_CONTENT: &'static str = "Белой ночью месяц красны/;"	v
+MIDSUMMER_NIGHT_CONTENT	tests/grep.rs	/^static MIDSUMMER_NIGHT_CONTENT: &'static str = "I do entreat your grace to pardon me.$/;"	v
+PARADISE_LOST_CONTENT	tests/grep.rs	/^static PARADISE_LOST_CONTENT: &'static str = "Of Mans First Disobedience, and the Fruit$/;"	v
+Rust Installation	README.md	/^## Rust Installation$/;"	s
+Source	README.md	/^## Source$/;"	s
+Submitting Incomplete Solutions	README.md	/^## Submitting Incomplete Solutions$/;"	s
+Writing the Code	README.md	/^## Writing the Code$/;"	s
+auto_approve	.exercism/metadata.json	/^{"track":"rust","exercise":"grep","id":"134bc3fd04424aad8d164231da2a08fa","url":"https:\/\/exerc/;"	b
+drop	tests/grep.rs	/^    fn drop(&mut self) {$/;"	P	implementation:Fixture
+exercise	.exercism/metadata.json	/^{"track":"rust","exercise":"grep","id":"134bc3fd04424aad8d164231da2a08fa","url":"https:\/\/exerc/;"	s
+file_names	tests/grep.rs	/^    file_names: &'a [&'a str],$/;"	m	struct:Fixture
+grep	src/lib.rs	/^pub fn grep(pattern: &str, flags: &Flags, files: &[&str]) -> Result<Vec<String>, Error> {$/;"	f
+handle	.exercism/metadata.json	/^{"track":"rust","exercise":"grep","id":"134bc3fd04424aad8d164231da2a08fa","url":"https:\/\/exerc/;"	s
+id	.exercism/metadata.json	/^{"track":"rust","exercise":"grep","id":"134bc3fd04424aad8d164231da2a08fa","url":"https:\/\/exerc/;"	s
+is_requester	.exercism/metadata.json	/^{"track":"rust","exercise":"grep","id":"134bc3fd04424aad8d164231da2a08fa","url":"https:\/\/exerc/;"	b
+new	src/lib.rs	/^    pub fn new(flags: &[&str]) -> Self {$/;"	P	implementation:Flags
+new	tests/grep.rs	/^    fn new(file_names: &'a [&'a str]) -> Self {$/;"	P	implementation:Fixture
+process_grep_case	tests/grep.rs	/^fn process_grep_case(pattern: &str, flags: &[&str], files: &[&str], expected: &[&str]) {$/;"	f
+set_up	tests/grep.rs	/^    fn set_up(&self) {$/;"	P	implementation:Fixture
+set_up_files	tests/grep.rs	/^fn set_up_files(files: &[(&str, &str)]) {$/;"	f
+set_up_test_case	tests/grep.rs	/^macro_rules! set_up_test_case {$/;"	M
+str	tests/grep.rs	/^static ILIAD_CONTENT: &'static str = "Achilles sing, O Goddess! Peleus' son;$/;"	v
+str	tests/grep.rs	/^static IN_THE_WHITE_NIGHT_CONTENT: &'static str = "Белой ночью месяц красны/;"	v
+str	tests/grep.rs	/^static MIDSUMMER_NIGHT_CONTENT: &'static str = "I do entreat your grace to pardon me.$/;"	v
+str	tests/grep.rs	/^static PARADISE_LOST_CONTENT: &'static str = "Of Mans First Disobedience, and the Fruit$/;"	v
+tear_down_files	tests/grep.rs	/^fn tear_down_files(files: &[&str]) {$/;"	f
+test_grep_returns_result	tests/grep.rs	/^fn test_grep_returns_result() {$/;"	f
+test_nonexistent_file_returns_error	tests/grep.rs	/^fn test_nonexistent_file_returns_error() {$/;"	f
+track	.exercism/metadata.json	/^{"track":"rust","exercise":"grep","id":"134bc3fd04424aad8d164231da2a08fa","url":"https:\/\/exerc/;"	s
+url	.exercism/metadata.json	/^{"track":"rust","exercise":"grep","id":"134bc3fd04424aad8d164231da2a08fa","url":"https:\/\/exerc/;"	s
