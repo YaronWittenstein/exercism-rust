@@ -39,11 +39,6 @@ impl<T: Clone> CircularBuffer<T> {
         if self.stored <= 0 {
             Err(Error::EmptyBuffer)
         } else {
-            // if the buffer was full prior to this `read`
-            // if self.stored == self.capacity {
-            //     self.next_write = (self.next_read + 1) % self.capacity;
-            // }
-
             let element = self.elements[self.next_read].take().unwrap();
             self.next_read = (self.next_read + 1) % self.capacity;
 
