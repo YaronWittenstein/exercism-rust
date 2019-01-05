@@ -1,0 +1,201 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a74b847/
+0	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.1164083562126845933
+0	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.1617349019360157463
+0	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.3144802570395919623
+0	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	a	array:local.0.MtimeBased
+0	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	n	array:local.0.MtimeBased.0
+0	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	o	array:local
+0	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	a	array:local.0.MtimeBased
+0	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	n	array:local.0.MtimeBased.0
+0	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	o	array:local
+0	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	a	array:deps
+0	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	a	array:local.0.MtimeBased
+0	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	n	array:local.0.MtimeBased.0
+0	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	o	array:local
+0	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	s	array:deps.0
+0	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	a	array:local.0.MtimeBased
+0	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	n	array:local.0.MtimeBased.0
+0	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	o	array:local
+0	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.1164083562126845933
+0	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.1617349019360157463
+0	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.3144802570395919623
+0	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	a	array:local.0.MtimeBased
+0	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	n	array:local.0.MtimeBased.0
+0	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	o	array:local
+0	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	a	array:deps
+0	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	a	array:local.0.MtimeBased
+0	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	n	array:local.0.MtimeBased.0
+0	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	o	array:local
+0	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	s	array:deps.0
+0	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	a	array:local.0.MtimeBased
+0	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	n	array:local.0.MtimeBased.0
+0	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	o	array:local
+1	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.1164083562126845933
+1	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.1617349019360157463
+1	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.3144802570395919623
+1	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	n	array:local.0.MtimeBased.0
+1	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	s	array:local.0.MtimeBased
+1	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	n	array:local.0.MtimeBased.0
+1	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	s	array:local.0.MtimeBased
+1	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	n	array:local.0.MtimeBased.0
+1	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	s	array:deps.0
+1	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	s	array:local.0.MtimeBased
+1	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	n	array:local.0.MtimeBased.0
+1	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	s	array:local.0.MtimeBased
+1	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.1164083562126845933
+1	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.1617349019360157463
+1	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	s	array:outputs.3144802570395919623
+1	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	n	array:local.0.MtimeBased.0
+1	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	s	array:local.0.MtimeBased
+1	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	n	array:local.0.MtimeBased.0
+1	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	s	array:deps.0
+1	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	s	array:local.0.MtimeBased
+1	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	n	array:local.0.MtimeBased.0
+1	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	s	array:local.0.MtimeBased
+1164083562126845933	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	a	object:outputs
+1164083562126845933	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	a	object:outputs
+1617349019360157463	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	a	object:outputs
+1617349019360157463	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	a	object:outputs
+2	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	n	array:deps.0
+2	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	n	array:deps.0
+3144802570395919623	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	a	object:outputs
+3144802570395919623	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	a	object:outputs
+CFBundleDevelopmentRegion	target/debug/deps/circular_buffer-8876085768a960b2.dSYM/Contents/Info.plist	/^		<key>CFBundleDevelopmentRegion<\/key>$/;"	k
+CFBundleDevelopmentRegion	target/debug/deps/circular_buffer-9c76f7860fe5cbaf.dSYM/Contents/Info.plist	/^		<key>CFBundleDevelopmentRegion<\/key>$/;"	k
+CFBundleIdentifier	target/debug/deps/circular_buffer-8876085768a960b2.dSYM/Contents/Info.plist	/^		<key>CFBundleIdentifier<\/key>$/;"	k
+CFBundleIdentifier	target/debug/deps/circular_buffer-9c76f7860fe5cbaf.dSYM/Contents/Info.plist	/^		<key>CFBundleIdentifier<\/key>$/;"	k
+CFBundleInfoDictionaryVersion	target/debug/deps/circular_buffer-8876085768a960b2.dSYM/Contents/Info.plist	/^		<key>CFBundleInfoDictionaryVersion<\/key>$/;"	k
+CFBundleInfoDictionaryVersion	target/debug/deps/circular_buffer-9c76f7860fe5cbaf.dSYM/Contents/Info.plist	/^		<key>CFBundleInfoDictionaryVersion<\/key>$/;"	k
+CFBundlePackageType	target/debug/deps/circular_buffer-8876085768a960b2.dSYM/Contents/Info.plist	/^		<key>CFBundlePackageType<\/key>$/;"	k
+CFBundlePackageType	target/debug/deps/circular_buffer-9c76f7860fe5cbaf.dSYM/Contents/Info.plist	/^		<key>CFBundlePackageType<\/key>$/;"	k
+CFBundleShortVersionString	target/debug/deps/circular_buffer-8876085768a960b2.dSYM/Contents/Info.plist	/^		<key>CFBundleShortVersionString<\/key>$/;"	k
+CFBundleShortVersionString	target/debug/deps/circular_buffer-9c76f7860fe5cbaf.dSYM/Contents/Info.plist	/^		<key>CFBundleShortVersionString<\/key>$/;"	k
+CFBundleSignature	target/debug/deps/circular_buffer-8876085768a960b2.dSYM/Contents/Info.plist	/^		<key>CFBundleSignature<\/key>$/;"	k
+CFBundleSignature	target/debug/deps/circular_buffer-9c76f7860fe5cbaf.dSYM/Contents/Info.plist	/^		<key>CFBundleSignature<\/key>$/;"	k
+CFBundleVersion	target/debug/deps/circular_buffer-8876085768a960b2.dSYM/Contents/Info.plist	/^		<key>CFBundleVersion<\/key>$/;"	k
+CFBundleVersion	target/debug/deps/circular_buffer-9c76f7860fe5cbaf.dSYM/Contents/Info.plist	/^		<key>CFBundleVersion<\/key>$/;"	k
+Circular Buffer	README.md	/^# Circular Buffer$/;"	c
+CircularBuffer	src/lib.rs	/^impl<T: Clone> CircularBuffer<T> {$/;"	c
+CircularBuffer	src/lib.rs	/^pub struct CircularBuffer<T> {$/;"	s
+EmptyBuffer	src/lib.rs	/^    EmptyBuffer,$/;"	e	enum:Error
+Error	src/lib.rs	/^pub enum Error {$/;"	g
+Feedback, Issues, Pull Requests	README.md	/^## Feedback, Issues, Pull Requests$/;"	s
+FullBuffer	src/lib.rs	/^    FullBuffer,$/;"	e	enum:Error
+MtimeBased	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	a	object:local.0
+MtimeBased	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	a	object:local.0
+MtimeBased	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	a	object:local.0
+MtimeBased	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	a	object:local.0
+MtimeBased	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	a	object:local.0
+MtimeBased	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	a	object:local.0
+MtimeBased	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	a	object:local.0
+Rust Installation	README.md	/^## Rust Installation$/;"	s
+Source	README.md	/^## Source$/;"	s
+Submitting Incomplete Solutions	README.md	/^## Submitting Incomplete Solutions$/;"	s
+Writing the Code	README.md	/^## Writing the Code$/;"	s
+auto_approve	.exercism/metadata.json	/^{"track":"rust","exercise":"circular-buffer","id":"ebb3345840b84c40a9d843f23be5b783","url":"http/;"	b
+can_read_item_just_written	tests/circular-buffer.rs	/^fn can_read_item_just_written() {$/;"	f
+capacity	src/lib.rs	/^    pub capacity: usize,$/;"	m	struct:CircularBuffer
+clear	src/lib.rs	/^    pub fn clear(&mut self) {$/;"	P	implementation:CircularBuffer
+clear_does_nothing_on_empty_buffer	tests/circular-buffer.rs	/^fn clear_does_nothing_on_empty_buffer() {$/;"	f
+clear_frees_up_capacity_for_another_write	tests/circular-buffer.rs	/^fn clear_frees_up_capacity_for_another_write() {$/;"	f
+deps	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	a
+deps	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	a
+deps	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	a
+deps	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	a
+deps	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	a
+deps	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	a
+deps	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	a
+each_item_may_only_be_read_once	tests/circular-buffer.rs	/^fn each_item_may_only_be_read_once() {$/;"	f
+edition	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	s
+edition	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	s
+edition	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	s
+edition	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	s
+edition	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	s
+edition	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	s
+edition	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	s
+elements	src/lib.rs	/^    pub elements: Vec<Option<T>>,$/;"	m	struct:CircularBuffer
+error_on_read_empty_buffer	tests/circular-buffer.rs	/^fn error_on_read_empty_buffer() {$/;"	f
+exercise	.exercism/metadata.json	/^{"track":"rust","exercise":"circular-buffer","id":"ebb3345840b84c40a9d843f23be5b783","url":"http/;"	s
+features	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	s
+features	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	s
+features	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	s
+features	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	s
+features	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	s
+features	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	s
+features	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	s
+full_buffer_cant_be_written_to	tests/circular-buffer.rs	/^fn full_buffer_cant_be_written_to() {$/;"	f
+handle	.exercism/metadata.json	/^{"track":"rust","exercise":"circular-buffer","id":"ebb3345840b84c40a9d843f23be5b783","url":"http/;"	s
+id	.exercism/metadata.json	/^{"track":"rust","exercise":"circular-buffer","id":"ebb3345840b84c40a9d843f23be5b783","url":"http/;"	s
+integer_buffer	tests/circular-buffer.rs	/^fn integer_buffer() {$/;"	f
+is_requester	.exercism/metadata.json	/^{"track":"rust","exercise":"circular-buffer","id":"ebb3345840b84c40a9d843f23be5b783","url":"http/;"	b
+items_are_read_in_the_order_they_are_written	tests/circular-buffer.rs	/^fn items_are_read_in_the_order_they_are_written() {$/;"	f
+items_cleared_out_of_buffer_cant_be_read	tests/circular-buffer.rs	/^fn items_cleared_out_of_buffer_cant_be_read() {$/;"	f
+local	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	a
+local	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	a
+local	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	a
+local	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	a
+local	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	a
+local	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	a
+local	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	a
+new	src/lib.rs	/^    pub fn new(capacity: usize) -> Self {$/;"	P	implementation:CircularBuffer
+next_read	src/lib.rs	/^    pub next_read: usize,$/;"	m	struct:CircularBuffer
+next_write	src/lib.rs	/^    pub next_write: usize,$/;"	m	struct:CircularBuffer
+outputs	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	o
+outputs	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	o
+overwrite	src/lib.rs	/^    pub fn overwrite(&mut self, element: T) {$/;"	P	implementation:CircularBuffer
+overwrite_acts_like_write_on_non_full_buffer	tests/circular-buffer.rs	/^fn overwrite_acts_like_write_on_non_full_buffer() {$/;"	f
+overwrite_replaces_the_oldest_item_on_full_buffer	tests/circular-buffer.rs	/^fn overwrite_replaces_the_oldest_item_on_full_buffer() {$/;"	f
+overwrite_replaces_the_oldest_item_remaining_in_buffer_following_a_read	tests/circular-buffer.rs	/^fn overwrite_replaces_the_oldest_item_remaining_in_buffer_following_a_read() {$/;"	f
+path	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	n
+path	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	n
+path	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	n
+path	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	n
+path	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	n
+path	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	n
+path	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	n
+profile	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	n
+profile	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	n
+profile	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	n
+profile	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	n
+profile	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	n
+profile	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	n
+profile	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	n
+read	src/lib.rs	/^    pub fn read(&mut self) -> Result<T, Error> {$/;"	P	implementation:CircularBuffer
+read_frees_up_capacity_for_another_write	tests/circular-buffer.rs	/^fn read_frees_up_capacity_for_another_write() {$/;"	f
+read_position_is_maintained_even_across_multiple_writes	tests/circular-buffer.rs	/^fn read_position_is_maintained_even_across_multiple_writes() {$/;"	f
+rustc	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	n
+rustc	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	n
+rustc	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	n
+rustc	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	n
+rustc	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	n
+rustc	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	n
+rustc	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	n
+rustc_fingerprint	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	n
+rustc_fingerprint	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	n
+rustflags	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	a
+rustflags	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	a
+rustflags	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	a
+rustflags	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	a
+rustflags	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	a
+rustflags	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	a
+rustflags	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	a
+stored	src/lib.rs	/^    pub stored: usize,$/;"	m	struct:CircularBuffer
+string_buffer	tests/circular-buffer.rs	/^fn string_buffer() {$/;"	f
+successes	target/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	o
+successes	target/rls/.rustc_info.json	/^{"rustc_fingerprint":14362202100856181635,"outputs":{"1617349019360157463":["___\\nlib___.rlib\\/;"	o
+target	target/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":4899859042/;"	n
+target	target/debug/.fingerprint/circular-buffer-6ef8ce29477a8203/lib-circular_buffer-6ef8ce29477a8203.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1097772722/;"	n
+target	target/debug/.fingerprint/circular-buffer-8876085768a960b2/test-integration-test-circular_buffer-8876085768a960b2.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":1717915184/;"	n
+target	target/debug/.fingerprint/circular-buffer-9c76f7860fe5cbaf/test-lib-circular_buffer-9c76f7860fe5cbaf.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1717915184/;"	n
+target	target/rls/debug/.fingerprint/circular-buffer-3ded7656479739cd/lib-circular_buffer-3ded7656479739cd.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":1391182602/;"	n
+target	target/rls/debug/.fingerprint/circular-buffer-8b5f77ea7f210cd5/test-integration-test-circular_buffer-8b5f77ea7f210cd5.json	/^{"rustc":11161650738512304635,"features":"[]","target":11780855954900392108,"profile":9676327367/;"	n
+target	target/rls/debug/.fingerprint/circular-buffer-f0958b37b1f9f1f6/test-lib-circular_buffer-f0958b37b1f9f1f6.json	/^{"rustc":11161650738512304635,"features":"[]","target":15911195699076818828,"profile":9676327367/;"	n
+track	.exercism/metadata.json	/^{"track":"rust","exercise":"circular-buffer","id":"ebb3345840b84c40a9d843f23be5b783","url":"http/;"	s
+url	.exercism/metadata.json	/^{"track":"rust","exercise":"circular-buffer","id":"ebb3345840b84c40a9d843f23be5b783","url":"http/;"	s
+write	src/lib.rs	/^    pub fn write(&mut self, element: T) -> Result<(), Error> {$/;"	P	implementation:CircularBuffer
