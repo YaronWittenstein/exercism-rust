@@ -1,5 +1,3 @@
-#![allow(unused)]
-
 use std::collections::HashMap;
 use std::sync::Arc;
 use std::thread;
