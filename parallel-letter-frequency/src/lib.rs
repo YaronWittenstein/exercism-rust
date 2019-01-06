@@ -1,24 +1,31 @@
+#![allow(unused)]
+
 use std::collections::HashMap;
+use std::sync::Arc;
 use std::thread;
 
-pub fn frequency(input: &[&'static str], worker_count: usize) -> HashMap<char, usize> {
-    let mut chunks = vec![Vec::<&str>::new(); worker_count];
+pub fn frequency(input: &[&str], worker_count: usize) -> HashMap<char, usize> {
+    let new_input = input
+        .iter()
+        .map(|s| s.to_lowercase())
+        .collect::<Vec<String>>();
 
-    for (i, text) in input.iter().enumerate() {
-        chunks[i % worker_count].push(text);
-    }
-
+    let input_arc = Arc::new(new_input);
     let mut handles = Vec::with_capacity(worker_count);
 
-    for chunk in chunks {
+    for worker in 0..worker_count {
+        let input_clone = Arc::clone(&input_arc);
+
         let handle = thread::spawn(move || {
             let mut stats = HashMap::<char, usize>::new();
 
-            for s in chunk {
-                for c in s.to_lowercase().chars() {
-                    if c.is_alphanumeric() && !c.is_digit(10) {
-                        let counter = stats.entry(c).or_insert(0);
-                        *counter += 1;
+            for (i, s) in input_clone.iter().enumerate() {
+                if i % worker_count == worker {
+                    for c in s.chars() {
+                        if c.is_alphanumeric() && !c.is_digit(10) {
+                            let counter = stats.entry(c).or_insert(0);
+                            *counter += 1;
+                        }
                     }
                 }
             }
