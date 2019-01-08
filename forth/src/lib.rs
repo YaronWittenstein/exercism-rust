@@ -1,8 +1,6 @@
-#![allow(unused)]
 use std::cell::RefCell;
 use std::collections::HashMap;
 use std::default::Default;
-use std::fmt;
 
 pub type Value = i32;
 pub type ForthResult = Result<(), Error>;
@@ -27,16 +25,6 @@ pub struct Token {
 struct Lexer;
 struct Expander;
 struct Evaluator;
-
-impl Token {
-    fn new(kind: TokenKind, value: String, definition: Option<Vec<String>>) -> Self {
-        Self {
-            kind,
-            value,
-            definition,
-        }
-    }
-}
 
 pub struct Forth {
     items: RefCell<Vec<Value>>,
@@ -131,61 +119,63 @@ impl Lexer {
         let mut i = 0;
 
         while i < words.len() {
+            let (j, token) = match words[i] {
+                ":" => Lexer::scan_def_token(&words, i)?,
+                _ => Lexer::scan_raw_token(words[i], i)?,
+            };
+
+            i = j;
+            tokens.push(token);
+        }
+
+        Ok(tokens)
+    }
+
+    fn scan_raw_token(word: &str, i: usize) -> Result<(usize, Token), Error> {
+        let kind = match word.parse::<i32>() {
+            Ok(_) => TokenKind::NUM,
+            Err(_) => TokenKind::CMD,
+        };
+
+        let token = Token {
+            kind,
+            value: word.to_uppercase(),
+            definition: None,
+        };
+
+        Ok((i + 1, token))
+    }
+
+    fn scan_def_token(words: &Vec<&str>, mut i: usize) -> Result<(usize, Token), Error> {
+        i += 1;
+
+        let mut definition = Vec::<String>::new();
+
+        while i < words.len() {
             match words[i] {
-                ":" => {
-                    i += 1;
+                ";" => {
+                    let def_name = definition[0].to_uppercase().to_string();
+                    let def_opcodes = definition[1..].iter().map(|s| s.to_uppercase()).collect();
 
-                    let mut definition = Vec::<String>::new();
-
-                    while i < words.len() {
-                        match words[i] {
-                            ";" => {
-                                let def_name = definition[0].to_uppercase().to_string();
-                                let def_opcodes =
-                                    definition[1..].iter().map(|s| s.to_uppercase()).collect();
-
-                                let token = Token {
-                                    kind: TokenKind::DEF,
-                                    value: def_name,
-                                    definition: Some(def_opcodes),
-                                };
-
-                                tokens.push(token);
-
-                                break;
-                            }
-                            w => definition.push(w.to_uppercase().to_string()),
-                        }
-
-                        i += 1;
-                    }
-
-                    if i == words.len() {
-                        return Err(Error::InvalidWord);
-                    }
-                }
-                w => {
-                    let token = match w.parse::<i32>() {
-                        Ok(v) => Token {
-                            kind: TokenKind::NUM,
-                            value: w.to_string(),
-                            definition: None,
-                        },
-                        Err(e) => Token {
-                            kind: TokenKind::CMD,
-                            value: w.to_uppercase(),
-                            definition: None,
-                        },
+                    let token = Token {
+                        kind: TokenKind::DEF,
+                        value: def_name,
+                        definition: Some(def_opcodes),
                     };
 
-                    tokens.push(token);
+                    return Ok((i + 1, token));
                 }
+                w => definition.push(w.to_uppercase().to_string()),
             }
 
             i += 1;
         }
 
-        Ok(tokens)
+        if i == words.len() {
+            return Err(Error::InvalidWord);
+        }
+
+        panic!("should never get here!")
     }
 }
 
@@ -219,7 +209,7 @@ impl Expander {
                         Some(def_strings) => {
                             for def_str in def_strings {
                                 match def_str.parse::<i32>() {
-                                    Ok(num) => {
+                                    Ok(_) => {
                                         let num_token = Token {
                                             kind: TokenKind::NUM,
                                             value: def_str,
