@@ -185,63 +185,76 @@ impl Expander {
 
         for token in tokens {
             match token.kind {
-                TokenKind::NUM => expanded.push(token),
-                TokenKind::CMD => match f.get_def(&token.value) {
-                    None => return Err(Error::UnknownWord),
-                    Some(cmd_def) => {
-                        for cmd_token in cmd_def {
-                            expanded.push(cmd_token.clone());
+                TokenKind::NUM => Self::expand_num(&mut expanded, token)?,
+                TokenKind::CMD => Self::expand_cmd(&mut expanded, f, token)?,
+                TokenKind::DEF => Self::expand_def(f, token)?,
+            }
+        }
+
+        Ok(expanded)
+    }
+
+    fn expand_def(f: &mut Forth, token: Token) -> ForthResult {
+        let def_name = token.value;
+        let mut def_tokens = Vec::<Token>::new();
+
+        if def_name.parse::<i32>().is_ok() {
+            return Err(Error::InvalidWord);
+        }
+
+        match token.definition {
+            None => panic!("data integrity: token of type `DEF` must have a definition associated"),
+            Some(def_strings) => {
+                for def_str in def_strings {
+                    match def_str.parse::<i32>() {
+                        Ok(_) => {
+                            let num_token = Token {
+                                kind: TokenKind::NUM,
+                                value: def_str,
+                                definition: None,
+                            };
+                            def_tokens.push(num_token);
                         }
-                    }
-                },
-                TokenKind::DEF => {
-                    let def_name = token.value;
-                    let mut def_tokens = Vec::<Token>::new();
+                        Err(_) => {
+                            // the token is a `CMD`, we take its definition
+                            let cmd_def = f.get_def(&def_str);
 
-                    if def_name.parse::<i32>().is_ok() {
-                        return Err(Error::InvalidWord);
-                    }
-
-                    match token.definition {
-                        None => panic!(
-                            "data integrity: token of type `DEF` must have a definition associated"
-                        ),
-                        Some(def_strings) => {
-                            for def_str in def_strings {
-                                match def_str.parse::<i32>() {
-                                    Ok(_) => {
-                                        let num_token = Token {
-                                            kind: TokenKind::NUM,
-                                            value: def_str,
-                                            definition: None,
-                                        };
-                                        def_tokens.push(num_token);
-                                    }
-                                    Err(_) => {
-                                        // the token is a `CMD`, we take its definition
-                                        let cmd_def = f.get_def(&def_str);
-
-                                        match cmd_def {
-                                            None => return Err(Error::UnknownWord),
-                                            Some(cmd_tokens) => {
-                                                // we have the expanded version of the command
-                                                for cmd_token in cmd_tokens {
-                                                    def_tokens.push(cmd_token.clone());
-                                                }
-                                            }
-                                        }
+                            match cmd_def {
+                                None => return Err(Error::UnknownWord),
+                                Some(cmd_tokens) => {
+                                    // we have the expanded version of the command
+                                    for cmd_token in cmd_tokens {
+                                        def_tokens.push(cmd_token.clone());
                                     }
                                 }
                             }
                         }
                     }
-
-                    f.insert_def(def_name.to_uppercase(), def_tokens);
                 }
             }
         }
 
-        Ok(expanded)
+        f.insert_def(def_name.to_uppercase(), def_tokens);
+
+        Ok(())
+    }
+
+    fn expand_num(expanded: &mut Vec<Token>, token: Token) -> ForthResult {
+        expanded.push(token);
+        Ok(())
+    }
+
+    fn expand_cmd(expanded: &mut Vec<Token>, f: &mut Forth, cmd: Token) -> ForthResult {
+        match f.get_def(&cmd.value) {
+            None => return Err(Error::UnknownWord),
+            Some(cmd_def) => {
+                for cmd_token in cmd_def {
+                    expanded.push(cmd_token.clone());
+                }
+            }
+        }
+
+        Ok(())
     }
 }
 
