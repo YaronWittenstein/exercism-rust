@@ -112,7 +112,7 @@ pub enum Error {
 }
 
 impl Lexer {
-    fn get_tokens(input: &str) -> Result<Vec<Token>, Error> {
+    pub fn scan_tokens(input: &str) -> Result<Vec<Token>, Error> {
         let words: Vec<&str> = input.trim().split(' ').collect();
 
         let mut tokens = Vec::<Token>::new();
@@ -120,8 +120,8 @@ impl Lexer {
 
         while i < words.len() {
             let (j, token) = match words[i] {
-                ":" => Lexer::scan_def_token(&words, i)?,
-                _ => Lexer::scan_raw_token(words[i], i)?,
+                ":" => Self::scan_def_token(&words, i)?,
+                _ => Self::scan_raw_token(words[i], i)?,
             };
 
             i = j;
@@ -180,7 +180,7 @@ impl Lexer {
 }
 
 impl Expander {
-    pub fn expand(f: &mut Forth, tokens: Vec<Token>) -> Result<Vec<Token>, Error> {
+    pub fn expand_tokens(f: &mut Forth, tokens: Vec<Token>) -> Result<Vec<Token>, Error> {
         let mut expanded = Vec::<Token>::new();
 
         for token in tokens {
@@ -259,7 +259,7 @@ impl Expander {
 }
 
 impl Evaluator {
-    fn eval(f: &mut Forth, tokens: Vec<Token>) -> ForthResult {
+    pub fn eval(f: &mut Forth, tokens: Vec<Token>) -> ForthResult {
         for token in tokens {
             match token.kind {
                 TokenKind::NUM => {
@@ -312,8 +312,8 @@ impl Forth {
     }
 
     pub fn eval(&mut self, input: &str) -> ForthResult {
-        let origin_tokens = Lexer::get_tokens(input)?;
-        let expanded_tokens = Expander::expand(self, origin_tokens)?;
+        let tokens = Lexer::scan_tokens(input)?;
+        let expanded_tokens = Expander::expand_tokens(self, tokens)?;
 
         Evaluator::eval(self, expanded_tokens)?;
 
